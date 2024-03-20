@@ -5,7 +5,7 @@ import bmw_diff from "./Footer/the_bmw_difference.json"
 import exp_and_part from "./Footer/experiance_and_partnership.json"
 import shopping_tools from "./Footer/online_shopping_tools.json"
 import finance_and_incentives from "./Footer/finance_and_incentives.json"
-import company_info from "./Footer/company_info.json"
+import company_info from "./Footer/company_Info.json"
 
 
 
