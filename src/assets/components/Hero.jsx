@@ -1,5 +1,5 @@
 import React, {useState, useEffect, useRef} from "react";
-import DynamicSection from "./DynamicSection";
+import HeroSlider from "./HeroSlider";
 import mainDataJSON from "../mainData.json"
 
 const heroDOM = mainDataJSON.hero.data
@@ -16,7 +16,7 @@ export default function Hero({screenSize}) {
     const hero = heroState.filter(hero =>  hero.isActive)[0]
 
     return (
-        <DynamicSection 
+        <HeroSlider 
             screenSize={screenSize}
             sectionName="hero"
             item={hero}
