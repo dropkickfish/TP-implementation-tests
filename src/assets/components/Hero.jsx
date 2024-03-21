@@ -16,7 +16,7 @@ export default function Hero({screenSize}) {
     const hero = heroState.filter(hero =>  hero.isActive)[0]
 
     return (
-        <DynamicSection 
+        <HeroSlider 
             screenSize={screenSize}
             sectionName="hero"
             item={hero}
