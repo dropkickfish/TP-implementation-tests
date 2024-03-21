@@ -17,10 +17,10 @@ export default function StaticSection({screenSize, sectionName, dataObject}) {
                   key={`${sectionName}-${item.id}`} 
                   className={`card__default ${sectionName}__card`}>
                   <div 
-                    className={`card__image ${sectionName}__image`}  
-                  />
-                  <div className="image-container">
-                    <img src={`${sectionName}/${imageName}`}></img>
+                    className={`card__image ${sectionName}__image`}>
+                    <div className="image-container">
+                      <img src={`${sectionName}/${imageName}`}></img>
+                    </div>
                   </div>
                     <div className={item.text !== "" ? "card__title bold" : "card__title"}>{item.title}</div>
                   {
