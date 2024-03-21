@@ -11,7 +11,7 @@ export default function StaticSection({screenSize, sectionName, dataObject}) {
             }
           {
             dataObject.data.map(item => {
-              const imageName = typeof item.image === "string" ? item.image : item.image[screenSize]
+              const imageName = typeof item.image === "string" ? item.image : item.image[desktop]
               return (
                 <div
                   key={`${sectionName}-${item.id}`} 
