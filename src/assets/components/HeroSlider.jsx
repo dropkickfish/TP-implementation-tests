@@ -3,7 +3,7 @@ import Selector from "./Selector";
 
 
 export default function HeroSlider({screenSize, sectionName, item, elementState, setElementState, activeElement, setActiveElement}) {
-    const imageName = `${sectionName}-${item.id}-${screenSize}.jpg`
+    const imageName = `${sectionName}-${item.id}-desktop.jpg`
     return (
         <div 
             key={`${sectionName}__${item.id}`}
