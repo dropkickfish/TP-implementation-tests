@@ -18,8 +18,10 @@ export default function StaticSection({screenSize, sectionName, dataObject}) {
                   className={`card__default ${sectionName}__card`}>
                   <div 
                     className={`card__image ${sectionName}__image`}  
-                    style={{"--image-bg": `url("../${sectionName}/${imageName}")`}}
                   />
+                  <div className="image-container">
+                    <img src={`${sectionName}/${imageName}`}></img>
+                  </div>
                     <div className={item.text !== "" ? "card__title bold" : "card__title"}>{item.title}</div>
                   {
                     item.text !== "" &&
