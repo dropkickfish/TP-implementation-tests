@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { TwicImg } from "@twicpics/components/react";
 
 export default function StaticSection({screenSize, sectionName, dataObject}) {
     const icon = "fa-solid fa-arrow-up-right-from-square"
@@ -19,7 +20,8 @@ export default function StaticSection({screenSize, sectionName, dataObject}) {
                   <div 
                     className={`card__image ${sectionName}__image`}>
                     <div className="image-container">
-                      <img src={`${sectionName}/${imageName}`}></img>
+                      <TwicImg src={`${sectionName}/${imageName}`} refit="true" mode="cover" className="TwicImg"></TwicImg>
+                      {/* <img src={`${sectionName}/${imageName}`}></img> */}
                     </div>
                   </div>
                     <div className={item.text !== "" ? "card__title bold" : "card__title"}>{item.title}</div>

@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from "react";
 import Selector from "./Selector";
+import { TwicImg } from "@twicpics/components/react";
 
 
 export default function HeroSlider({screenSize, sectionName, item, elementState, setElementState, activeElement, setActiveElement}) {
@@ -10,7 +11,7 @@ export default function HeroSlider({screenSize, sectionName, item, elementState,
             className={`heroslider__section ${sectionName} ${sectionName}__${item.id}`}
         >
             <div className="image-container">
-                <img src={`${sectionName}/${imageName}`}></img>
+                <TwicImg src={`${sectionName}/${imageName}`} focus="auto" mode="cover" ratio="none" className="TwicImg"/>
             </div>
             <h1 className={`${sectionName}__title title`}>{item.title}</h1>
             <p className={`${sectionName}__text text`}>{item.text}</p>

@@ -6,6 +6,7 @@ import Models from "./assets/components/ModelsRow";
 import Footer from "./assets/components/Footer";
 import StaticSection from "./assets/components/StaticSection";
 import mainData from "./assets/mainData.json"
+import VideoHero from "./assets/components/VideoHero";
 
 
 export default function App() {
@@ -54,6 +55,9 @@ export default function App() {
             sectionName="ownership"
             dataObject={mainData.ownership}
         />
+      }
+      {
+        <VideoHero/>
       }
       {
         screenSize === "desktop" && <Models />
