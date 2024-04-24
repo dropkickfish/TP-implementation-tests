@@ -11,7 +11,7 @@ export default function HeroSlider({screenSize, sectionName, item, elementState,
             className={`heroslider__section ${sectionName} ${sectionName}__${item.id}`}
         >
             <div className="image-container">
-                <TwicPicture src={`${sectionName}/${imageName}`} focus="auto" mode="cover" ratio="none" className="TwicImg" eager/>
+                <TwicPicture src={`${sectionName}/${imageName}`} focus="auto" mode="cover" ratio="none" eager/>
             </div>
             <h1 className={`${sectionName}__title title`}>{item.title}</h1>
             <p className={`${sectionName}__text text`}>{item.text}</p>
