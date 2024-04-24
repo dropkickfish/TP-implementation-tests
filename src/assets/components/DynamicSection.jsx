@@ -9,7 +9,7 @@ export default function DynamicSection({screenSize, sectionName, item, elementSt
             key={`${sectionName}__${item.id}`}
             className={`dynamic__section ${sectionName} ${sectionName}__${item.id}`}
             style={
-                {"--image-bg": `url("../${sectionName}/${imageName}")`}
+                {"--image-bg": `url("https://andy-netflify.twic.pics/${sectionName}/${imageName}?twic=v1/output=webp")`}
             }
         >
             <h1 className={`${sectionName}__title title`}>{item.title}</h1>
